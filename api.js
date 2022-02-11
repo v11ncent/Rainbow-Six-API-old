@@ -340,7 +340,7 @@ function getStatsByOperator(player, session, team) {
     // generates an expiration for expiration header
     function genExpiration() {
         let time = new Date();
-        //1 hour -- set to what you like. Longer time = less frequent player updates
+        // 1 hour -- set to what you like. Longer time = less frequent player updates
         let cacheTime = 1;
         time.setHours(time.getHours() + cacheTime);
         let expiration = time.toISOString();
